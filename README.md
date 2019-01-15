@@ -1,20 +1,35 @@
-SheetEvents, a Qlik Sense Extension for trigger actions when open a sheet
+![Lizardis Extension Audit](https://img.shields.io/badge/Lizardis%20Extension%20Audit-approved-%2366b32e.svg) ![Version](https://img.shields.io/badge/version-0.1.3-%2366b32e.svg)
 
-==================================
-==================================
+# SheetEvents
 
-Available in https://github.com/iviasensio/SheetEvents
+## Introduction
 
-Current version 1.0.
+SheetEvents is a Qlik Sense Extension which aims to incorporate sheet event triggers similar to the QlikView  `OnActivateSheet` triggers.
 
-Based on swr-sense-navigation from Stefan Walther.
+With SheetEvent you can trigger up to 10 events when entering a sheet. Those events are:
 
-Author Ivan Felipe Asensio QlikTech Iberia,s.l.
+* Apply Bookmark
+* Clear All Selections
+* Clear Selection in Field
+* Lock Field
+* Select Possible Values
+* Select Excluded Values
+* Select Alternative Values
+* Select and Lock in Field
+* Select Value in Field
+* Select Multiple Values in Field
+* Set Variable Value
+* Lock All Selections
+* Unlock All Selections
 
 
 
-This extension is useful to trigger actions when open a sheet and then deliver the guided rules to developers.
+All events will be triggered one after another with an initial delay which can be adjusted.
 
 
-Actions are related to fields, bookmarks and variables.
-Up to 10 chained actions when open a sheet.
+
+## Special Thanks
+
+* [Ivan Felipe Asensio](https://github.com/iviasensio/SheetEvents)
+
+  Original author of this extension

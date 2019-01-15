@@ -1,0 +1,12 @@
+paths:
+  qext: ./
+
+exclude:
+  files:
+    - ".*"
+    - "*.zip"
+    - "*.qvf"
+  folders:
+    - ".git"
+    - ".idea"
+    - node_modules

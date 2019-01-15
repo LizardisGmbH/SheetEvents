@@ -3,10 +3,9 @@ define( [
 	'jquery',
 	'underscore',
 	'qlik',
-	'./lib/external/sense-extension-utils/extUtils',
 	'ng!$q',
 	'ng!$http'
-], function ( $, _, qlik, extUtils, $q, $http ) {
+], function ( $, _, qlik, $q, $http ) {
 
 	var app = qlik.currApp();
 
