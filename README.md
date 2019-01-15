@@ -1,4 +1,4 @@
-![Lizardis Extension Audit](https://img.shields.io/badge/Lizardis%20Extension%20Audit-approved-%2366b32e.svg) ![Version](https://img.shields.io/badge/version-0.1.3-%2366b32e.svg)
+![Lizardis Extension Audit](https://img.shields.io/badge/Lizardis%20Extension%20Audit-approved-%2366b32e.svg) ![Release](https://img.shields.io/github/release/LizardisGmbH/SheetEvents.svg)
 
 # SheetEvents
 
