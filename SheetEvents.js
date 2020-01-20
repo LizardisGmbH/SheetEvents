@@ -23,8 +23,6 @@ define([
       var tasksArray= [];
       var tasksArrayIndex= 0;
 
-      window.scope = $scope;
-
       // Helper function to retrieve a field
       function getField( fieldName ) {
         if ( !_.isEmpty( fieldName ) ) {
@@ -52,11 +50,12 @@ define([
 
       return {
         onInit: function() {
-          qlikApp = qlik.currApp();
+          // https://stackoverflow.com/a/54524176/3787495
+          qlikApp = qlik.currApp($scope.$parent);
           delay = $scope.layout.props["delay"];
 
           var i, fieldName, field, value, values, valueArray, softlock, variable, bookmark;
-                      
+
           for (i = 1; i <= 10; i+=1 ) {
             tasksArrayIndex= i - 1;
             fieldName       = $scope.layout.props["field" + i];
@@ -67,7 +66,7 @@ define([
             softlock = $scope.layout.props["softlock" + i];
             variable        = $scope.layout.props["variable" + i];
             bookmark        = $scope.layout.props["bookmark" + i];
-                          
+
             switch ( $scope.layout.props["actionBefore" + i] ) {
               case "clearAll":
                 tasksArray[i - 1] = qlikApp.clearAll.bind(qlikApp);
